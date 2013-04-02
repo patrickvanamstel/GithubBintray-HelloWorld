@@ -8,6 +8,12 @@
 		<url>scm:git:git@github.com:patrickvanamstel/GithubBintray-HelloWorld.git</url>
 		<developerConnection>scm:git:git@github.com:patrickvanamstel/GithubBintray-HelloWorld.git</developerConnection>
   </scm>
+  <distributionManagement>
+       <repository>
+           <id>GithubBintray</id>
+           <url>http://dl.bintray.com/content/patrickvanamstel/GithubBintray</url>
+       </repository>
+  </distributionManagement>
   <build>
 		<plugins>
 			<plugin>
@@ -22,12 +28,6 @@
 				</configuration>
 			</plugin>
 			<plugin>
-				<!-- 
-					mvn release:prepare
- 					mvn release:perform -Dgoals=
- 					
- 					Todo a release without distribution
-				 -->
     			<groupId>org.apache.maven.plugins</groupId>
     			<artifactId>maven-release-plugin</artifactId>
     			<version>2.2.2</version>
