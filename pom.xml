@@ -3,17 +3,38 @@
   <groupId>nl.kaninefatendreef.developer.githubbintray</groupId>
   <artifactId>helloworld</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <scm>
+		<connection>scm:git:git@github.com:patrickvanamstel/GithubBintray-HelloWorld.git</connection>
+		<url>scm:git:git@github.com:patrickvanamstel/GithubBintray-HelloWorld.git</url>
+		<developerConnection>scm:git:git@github.com:patrickvanamstel/GithubBintray-HelloWorld.git</developerConnection>
+  </scm>
   <build>
-    <sourceDirectory>src</sourceDirectory>
-    <plugins>
-      <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.0</version>
-        <configuration>
-          <source/>
-          <target/>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+					<showDeprecation>true</showDeprecation>
+					<showWarnings>true</showWarnings>
+					<verbose>true</verbose>
+				</configuration>
+			</plugin>
+			<plugin>
+				<!-- 
+					mvn release:prepare
+ 					mvn release:perform -Dgoals=
+ 					
+ 					Todo a release without distribution
+				 -->
+    			<groupId>org.apache.maven.plugins</groupId>
+    			<artifactId>maven-release-plugin</artifactId>
+    			<version>2.2.2</version>
+    			<configuration>
+        			<localCheckout>true</localCheckout>
+    			</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
