@@ -10,8 +10,8 @@
   </scm>
   <distributionManagement>
        <repository>
-           <id>GithubBintray</id>
-           <url>http://dl.bintray.com/content/patrickvanamstel/GithubBintray</url>
+           <id>bintray-server</id>
+           <url>https://api.bintray.com/maven/patrickvanamstel/GithubBintray/HelloWorld</url>
        </repository>
   </distributionManagement>
   <build>
