@@ -9,10 +9,11 @@
 		<developerConnection>scm:git:git@github.com:patrickvanamstel/GithubBintray-HelloWorld.git</developerConnection>
   </scm>
   <distributionManagement>
-       <repository>
-           <id>bintray-server</id>
-           <url>https://api.bintray.com/maven/patrickvanamstel/GithubBintray/HelloWorld</url>
-       </repository>
+		<repository>
+			<id>bintray-patrickvanamstel-GithubBintray-HelloWorld</id>
+			<name>patrickvanamstel-GithubBintray-HelloWorld</name>
+			<url>https://api.bintray.com/maven/patrickvanamstel/GithubBintray/HelloWorld</url>
+		</repository>
   </distributionManagement>
   <build>
 		<plugins>
