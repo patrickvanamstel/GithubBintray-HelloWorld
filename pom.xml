@@ -2,12 +2,11 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>nl.kaninefatendreef.developer.githubbintray</groupId>
   <artifactId>helloworld</artifactId>
-  <version>1.0.9-SNAPSHOT</version>
+  <version>0.0.1-SNAPSHOT</version>
   <scm>
 		<connection>scm:git:git@github.com:patrickvanamstel/GithubBintray-HelloWorld.git</connection>
 		<url>scm:git:git@github.com:patrickvanamstel/GithubBintray-HelloWorld.git</url>
 		<developerConnection>scm:git:git@github.com:patrickvanamstel/GithubBintray-HelloWorld.git</developerConnection>
-    <tag>HEAD</tag>
   </scm>
   <distributionManagement>
 		<repository>
